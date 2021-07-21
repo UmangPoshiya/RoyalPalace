@@ -1,0 +1,142 @@
+
+
+.membershipmain{
+
+    background:url('/img/membership_main.jpg');
+    height: 485px;
+    width: 100%;
+    
+}
+.membership_main_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 51px 196px;
+}
+
+.font{
+    color: black;
+    font-size: 3rem;
+  text-shadow: 0px 1px 16px #46ee0e;
+}
+
+
+
+
+
+
+
+
+.membership_cards{
+    margin: 47px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 1000px; */
+    flex-wrap: wrap;
+}
+
+.membcard{
+display: flex;
+flex-direction: column;
+width: 25%;
+height: 370px;
+border: 2px solid white;
+transition-property: all;
+            transition-duration: 2s;
+}
+
+.membcard:hover{
+    transform: scale(1.2);
+    
+          
+    background-color: gray;
+    border-radius: 44px;
+}
+.imgpart{
+    height: 65%;
+    width: 100%;
+    border-radius: 45px;
+    box-shadow: 9px 12px 15px 1px black;
+}
+
+
+
+
+
+
+.imgpart img{
+    border-radius: 39px;
+    width: 100%;
+    height: 100%;
+}
+.detailspart{
+   
+height: 33%;
+width: 100%;
+text-align: center;
+margin: 18px auto;
+}
+
+
+.hide{
+    display: none;
+}
+
+.centerbtn{
+    display: block;
+ margin: auto;
+}
+
+@media only  screen and (max-width:1000px){
+    .membershipmain{
+        height: 260px;
+    }
+    .membership_main_head{
+        width: 70%;
+        padding: 41px 41px;
+    }
+    .font{
+        font-size: 1.1rem;
+    }
+    
+    
+    .centerbtn{
+        position: static;
+
+    }
+    
+}
+
+
+@media only  screen and (max-width:785px){
+
+    .membership_cards{
+        flex-direction: column;
+    }
+
+    .membcard{
+       
+        width: 84%;
+        height: 265px;
+        border: 2px solid white;
+        }
+        .imgpart{
+            height: 45%;
+            width: 60%;
+            margin: auto;
+        }
+        
+        .imgpart img{
+            border-radius: 16px;
+          
+        }
+        .detailspart{ 
+        height: 55%;
+        width: 85%;
+        margin: 18px auto;
+        font-size: 12px;
+        }
+}

@@ -1,0 +1,70 @@
+*{
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+.rich{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    margin: 41px auto;
+    font-size: 1.3rem;
+}
+.rich a{
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #9a8772;
+    padding: 6px 23px;
+    border-radius: 12px;
+}
+.rich a:hover{
+    background-color: #728d9a ;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 35px;
+}
+
+.feedback{
+    min-height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myInput{
+    width: 456px;
+    padding: 8px;
+    margin: 8px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    outline: none;
+}
+
+.pos{
+    position: relative;
+    width: 68px;
+    left: -5px;
+}
+
+@media only screen and (max-width: 791px) {
+    h1{
+        font-size: 20px;
+    }
+    .myInput {
+        width: 257px;
+        font-size: 12px;
+        
+    }
+}

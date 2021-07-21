@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Hotel</title>
+  <link rel="stylesheet" href="/static/Home.css">
+  <link rel="stylesheet" href="/static/navfooter.css">
+</head>
+
+<body>
+  <nav class="navbar h-nav-resp">
+    <div class="logo v-class-resp">
+      <img src="/img/logo.jpg" alt="Royal Hotel">
+    </div>
+    <ul class="nav-list v-class-resp">
+      <li><a href="/view/Home.html">Home </a></li>
+      <li><a href="/view/AboutUs.html">About Us </a></li>
+      <li><a href="/view/Membership.html">Membership</a></li>
+      <li><a href="/view/Contact.html">Contact Us</a></li>
+    </ul>
+    <div class="rightNav ">
+      <button class="btn">BOOK A STAY</button>
+    </div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+  </nav>
+  <hr>
+
+
+  <!-- slide show -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="/img/scroll1.jpg" style="width:100%">
+      <div class="text">Great Location</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="/img/scroll2.jpg" style="width:100%">
+      <div class="text">Open Pool</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="/img/scroll3.jpg" style="width:100%">
+      <div class="text">Large Rooms</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="/img/scroll4.jpg" style="width:100%">
+      <div class="text">Budget friendly</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+
+  <!-- services area -->
+
+  <section class="services services-resp">
+    <div class="label">
+      <h1>Book Direct</h1>
+    </div>
+    <div class="container">
+      <div class="services-details">
+        <div class="marko">
+          <img src="/img/services_like.png" alt="">
+        </div>
+        <h4>Best Rates</h4>
+      </div>
+      <div class="services-details">
+        <div class="marko marko-set">
+          <img src="/img/services_money.png" alt="">
+        </div>
+        <h4>Pay at Hotel</h4>
+      </div>
+      <div class="services-details">
+        <div class="marko">
+          <img src="/img/services_offer.png" alt="">
+        </div>
+        <h4>Exclussive Offers</h4>
+      </div>
+      <div class="services-details">
+        <div class="marko">
+          <img src="/img/services_wifi.png" alt="">
+        </div>
+        <h4>Wifi Access</h4>
+      </div>
+      <div class="services-details">
+        <div class="marko marko-set">
+          <img src="/img/services_gueerant.png" alt="">
+        </div>
+        <h4>Guaranteed Servics</h4>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- cards section -->
+  <section class="cards">
+    <div class="maincard">
+      <div class="photo">
+        <img src="/img/cards_pool.jpg" alt="pool image">
+
+      </div>
+      <div class="details">
+        <h1 class="middle_tag">Outdoor pool</h1>
+        <p>Enjoy a refreshing swim in the outdoor swimming pool. It is the perfect place to relax seven days a week. The
+          poolside on the second floor of the hotel is ideal for relaxation.</p>
+      </div>
+    </div>
+
+    <div class="maincard reverse_card">
+      <div class="photo">
+        <img src="/img/cards_spa.jpg" alt="spa img">
+
+      </div>
+      <div class="details">
+        <h1 class="middle_tag">Spa</h1>
+        <p>Located on the second floor, our spa offers six single-treatment rooms including a couples therapy room, Thai
+          room, and the Ayurveda room. Signature products from the award-winning, Himalayan foothills luxury spa Ananda
+          will help you to self-care and rejuvenate the mind and body for optimum relaxation and wellness.</p>
+      </div>
+
+    </div>
+    <div class="maincard">
+      <div class="photo">
+        <img src="/img/cards_gym.jpg" alt="gym img">
+
+      </div>
+      <div class="details">
+        <h1 class="middle_tag">Fitness Center</h1>
+        <p>Stay in shape by visiting the fitness centre located on the second floor. The fitness centre features
+          state-of-the-art cardio and resistance machines. Select a package and get yourself registered:
+          <br>
+          <br>
+          <b> 1 Month Membership @INR 8000/-*</b>
+          <br>
+          Benefits: Gym & pool membership, steam bath & sauna.
+          <br>
+          <b> 3 Months Membership @ INR 24000/-*</b>
+          <br>
+          Benefits: Gym & pool membership, steam bath & sauna.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- video section -->
+
+  <section class="video">
+
+    <video class="video_area" autoplay muted loop>
+      <source src="/video/hotel_video.mp4" type="video/mp4">
+
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <br>
+  <br>
+  <br>
+  <hr>
+
+
+
+  <!-- footer section -->
+
+  <section class="myfooter">
+    <div class="upperfooter">
+      <div class="footer_areas">
+        <p class="connect_heading">Royal Hotel Properties</p>
+        <p>Royal Hotel Spa & Golf Resort Goa</p>
+        <p>Royal Hotel Great Eastrern Kolkata</p>
+        <p>Grand Royal Hotel Palace</p>
+        <p>Royal Hotel Jaipur</p>
+        <p>Royal Hotel Ahmedabad</p>
+
+      </div>
+      <div class="footer_areas">
+        <p class="connect_heading">Royal Hotel Hospitality Group</p>
+        <p>About Us</p>
+        <p>Management</p>
+        <p>Royal Hotel Loyalty</p>
+        <p>Media Courage<p6>
+            <p>Awards</p>
+            <p>Blog</p>
+
+      </div>
+      <div class="footer_areas">
+        <p class="connect_heading">Connect with Us</p>
+        <div class="last">
+          <div class="connect_img">
+            <a href="https://instagram.com/umang_poshiya1408?utm_medium=copy_link" target="_blank"><img
+                src="/img/connect_insta.png" alt=""></a>
+          </div>
+          <div class="connect_img">
+            <a href="https://www.facebook.com/umang.poshiya.3" target="_blank"><img src="/img/connect_fb.jpg"
+                alt=""></a>
+          </div>
+          <div class="connect_img">
+            <a href="https://www.linkedin.com/in/umang-p-48859a162" target="_blank"><img src="/img/connect_li.png"
+                alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomfooter">
+      <p> &copy; All Rights Reserved | Website is made for Knowledge Purpose</p>
+    </div>
+
+  </section>
+
+
+
+  <script src="/static/Home.js"></script>
+</body>
+
+</html>
