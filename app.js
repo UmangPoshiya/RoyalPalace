@@ -3,17 +3,10 @@ const path = require("path");
 
 const bodyparser = require("body-parser");
 
-// const mongoose = require('mongoose');
-// mongoose.connect('mongodb+srv://umangposhiya:Umang@1408@cluster0.97hfv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true});
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://umangposhiya:Umang@1408@cluster0.97hfv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true});
 
-const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://umangposhiya:<password>@cluster0.97hfv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
 const app = express();
 const port = process.env.PORT || 800;
 
@@ -64,7 +57,7 @@ app.post("/contact", (req, res) => {
         res.sendFile(__dirname+'/view/goback.html');
         console.log(req.body.name);
     }).catch(() => {
-        res.status(400).send("Unable to save data in database")
+        res.status(400).send(" Currently Unable to save data in database Please contact us via mail")
     })
     // res.status(200).render('contact.pug');
 })
