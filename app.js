@@ -4,7 +4,7 @@ const path = require("path");
 const bodyparser = require("body-parser");
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/feedback', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://umangposhiya:Umang@1408@cluster0.97hfv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true});
 
 
 const app = express();
